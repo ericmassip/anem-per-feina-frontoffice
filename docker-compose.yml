@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  frontoffice:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/anem-per-feina-frontoffice/
+      - /anem-per-feina-frontoffice/node_modules
